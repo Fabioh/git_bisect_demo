@@ -19,7 +19,7 @@ namespace GitBisectDemo
 			int acumulado = 1;
 			for (int count = 1; count <= i; ++count)
 			{
-				acumulado *= count;
+				acumulado += count;
 			}
 
 			return acumulado;
