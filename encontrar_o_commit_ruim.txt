@@ -1,0 +1,36 @@
+================
+manualmente
+================
+
+# inicia a busca
+git bisect start
+
+# aponta um commit bom, para inico das busca
+git bisect good c1fc97
+
+# aponta um commit ruim, para inico das busca
+git bisect bad 0f8e2c
+
+# executa os testes para verificar se está tudo certo 
+dotnet test GitBisectDemo.Tests/GitBisectDemo.Tests.csproj
+
+## fala para o git que este pcommit é bom
+git bisect good
+
+## fala para o git que este pcommit é ruim
+git bisect bad
+
+
+# mostar o que foi feito no commit ruim
+git show <commit ruim>
+
+
+=================
+automaticamente 
+=================
+
+# passa um commit ruim e um commit bom 
+git bisect start 0f8e2c c1fc97
+
+# indica para o git executar um comando para verificar se o commit é bom ou ruim
+git bisect run dotnet test GitBisectDemo.Tests/GitBisectDemo.Tests.csproj

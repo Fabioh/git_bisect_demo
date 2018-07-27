@@ -4,9 +4,13 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitBisectDemo.Tests", "GitBisectDemo.Tests\GitBisectDemo.Tests.csproj", "{F9949122-268A-4F0D-BDE1-1D88D91AEFB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitBisectDemo", "GitBisectDemo\GitBisectDemo.csproj", "{1E0E26BB-A5DA-4B5F-8451-0956298BB232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitBisectDemo", "GitBisectDemo\GitBisectDemo.csproj", "{1E0E26BB-A5DA-4B5F-8451-0956298BB232}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utilitarios", "utilitarios", "{75042103-B464-4A55-A06A-260711687106}"
+	ProjectSection(SolutionItems) = preProject
+		encontrar_o_commit_ruim.txt = encontrar_o_commit_ruim.txt
+		rodar_testes_linha_de_comando.txt = rodar_testes_linha_de_comando.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
