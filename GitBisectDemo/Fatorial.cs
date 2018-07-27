@@ -16,8 +16,13 @@ namespace GitBisectDemo
 				return 2;
 			}
 
-			return i;
+			int acumulado = 1;
+			for (int count = 1; count <= i; ++count)
+			{
+				acumulado *= count;
+			}
 
+			return acumulado;
 		}
 	}
 }

@@ -19,5 +19,11 @@ namespace GitBisectDemo.Tests
 			Fatorial.CalculaFatorial(2).ShouldBe(2);
 		}
 
+		[Fact]
+		public void Fat3()
+		{
+			var v = Fatorial.CalculaFatorial(3);
+			v.ShouldBe(3 * 2);
+		}
 	}
 }
