@@ -1,0 +1,1 @@
+dotnet test GitBisectDemo.Tests/GitBisectDemo.Tests.csproj
